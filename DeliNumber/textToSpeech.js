@@ -12,7 +12,7 @@ window.speechSynthesis.onvoiceschanged = () => {
   //voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.name, i)));
   
   // Google US English
-  speech.voice = voices[49];
+  speech.voice = voices[3];
 
 };
 
