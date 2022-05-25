@@ -1,6 +1,8 @@
 const queryString = window.location.search;
 
-const input = queryString.get('input');
+const urlParams = new URLSearchParams(queryString);
+
+const input = urlParams.get('input');
 window.alert(input);
 
 
