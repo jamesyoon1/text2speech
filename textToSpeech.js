@@ -1,3 +1,8 @@
+const queryString = window.location.search;
+
+const input = queryString.get('input');
+window.alert(input);
+
 
    
 let speech = new SpeechSynthesisUtterance();
