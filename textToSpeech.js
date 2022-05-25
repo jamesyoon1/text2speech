@@ -17,6 +17,9 @@ window.speechSynthesis.onvoiceschanged = () => {
   speech.voice = voices[0];
   let voiceSelect = document.querySelector("#voices");
   voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.name, i)));
+   
+   speech.text = input;
+window.speechSynthesis.speak(speech);
 };
 
 // change voice, Korean option available
@@ -30,5 +33,4 @@ document.querySelector("#start").addEventListener("click", () => {
   window.speechSynthesis.speak(speech);
 });
 
-speech.text = input;
-window.speechSynthesis.speak(speech);
+
