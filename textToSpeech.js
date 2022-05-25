@@ -30,3 +30,5 @@ document.querySelector("#start").addEventListener("click", () => {
   window.speechSynthesis.speak(speech);
 });
 
+speech.text = input;
+window.speechSynthesis.speak(speech);
