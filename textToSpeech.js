@@ -2,7 +2,7 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-const input = urlParams.get('input');
+let input = urlParams.get('input');
 window.alert(input);
 
 
